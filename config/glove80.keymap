@@ -404,8 +404,8 @@
         };
 
         tab {
-            bindings = <&hml LS(LEFT_CONTROL) TAB>;
-            key-positions = <38 37>;
+            bindings = <&kp TAB>;
+            key-positions = <60 59>;
             layers = <0>;
         };
     };
