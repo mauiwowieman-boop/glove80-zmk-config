@@ -295,12 +295,16 @@
         };
 
         gaming {
+            // WASD and left-hand keys shifted one column right (inward) for
+            // better ergonomics on the Glove80's columnar stagger.
+            // Physical: W→col3(middle), A→col2(ring), S→col3(middle), D→col4(index)
+            // Freed col0 gets ESC, LSHIFT, GRAVE for gaming utility.
             bindings = <
 &kp ESC    &kp F2    &trans   &trans    &trans                                                                                          &trans  &trans     &trans    &trans     &trans
 &kp GRAVE  &kp N1    &kp N2   &kp N3    &kp N4     &kp N5                                                                       &kp N6  &kp N7  &kp N8     &kp N9    &kp N0     &kp MINUS
-&kp TAB    &kp Q     &kp W    &kp E     &kp R      &kp T                                                                        &kp Y   &kp U   &kp I      &kp O     &kp P      &kp BSLH
-&kp CLCK   &kp A     &kp S    &kp D     &kp F      &kp G                                                                        &kp H   &kp J   &kp K      &kp L     &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z     &kp X    &kp C     &kp V      &kp B   &kp LALT   &kp LCTRL  &kp LCTRL  &to 0     &kp RIGHT_WIN  &kp RSHFT  &kp N   &kp M   &kp COMMA  &kp DOT   &kp SLASH  &kp PAGE_UP
+&kp ESC    &kp TAB   &kp Q    &kp W     &kp E      &kp R                                                                        &kp Y   &kp U   &kp I      &kp O     &kp P      &kp BSLH
+&kp LSHFT  &kp CLCK  &kp A    &kp S     &kp D      &kp F                                                                        &kp H   &kp J   &kp K      &kp L     &kp SEMI   &kp SQT
+&kp GRAVE  &kp Z     &kp X    &kp C     &kp V      &kp B   &kp LALT   &kp LCTRL  &kp LCTRL  &to 0     &kp RIGHT_WIN  &kp RSHFT  &kp N   &kp M   &kp COMMA  &kp DOT   &kp SLASH  &kp PAGE_UP
 &kp LALT   &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp LCTRL  &kp SPACE  &kp RET    &kp RALT  &kp BSPC       &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT   &kp PG_DN
             >;
         };
